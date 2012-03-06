@@ -1,12 +1,17 @@
 <?php
 class kataConcatenaCondiciones {
+	private $cadena = '';
 
-	function __construct() {
+	public function __construct() {
 		
 	}
 
-	function concatena() {
-		
+	public function concatena($cond_ant,$cond_int,$ar_datos) {
+		$this->cadena = $ar_datos[0].' '.$cond_int.' '.$ar_datos[1];
+	}
+	
+	public function get_cadena() {
+		return $this->cadena;
 	}
 	
 }
