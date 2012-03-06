@@ -15,6 +15,14 @@ class kataConcatenaCondicionesTest extends PHPUnit_Framework_TestCase {
 		$obj = new kataConcatenaCondiciones();
 		$obj->concatena('','and',array('A','B','C'));
         $this->assertEquals($obj->get_cadena(), 'A and B and C');
-    } 
+    }
+	public function test_03()
+    {
+		$obj = new kataConcatenaCondiciones();
+		$obj->concatena('','or',array('A','B'));
+        $this->assertEquals($obj->get_cadena(), 'A or B');
+		$obj->concatena('and','',array('C'));
+        $this->assertEquals($obj->get_cadena(), '(A or B) and C');
+    }
 }
 ?>
