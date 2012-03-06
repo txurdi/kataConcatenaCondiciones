@@ -21,7 +21,7 @@ Se llamará al método las veces que haga falta para ir concatenando las condici
 
 
 ## Conclusiones:
-- 
+- No tenemos claro si pensar la estructura de entrada de la función es parte del TDD o no. Lo plantearemos en el siguiente katayuno.com.
 
 ## Autores
 - En [@SocSoft](http://twitter.com/SocSoft):
