@@ -1,5 +1,5 @@
 <?php
-include_once "kataConcatenaCondiciones.php";
+include_once "../kataConcatenaCondiciones.php";
 
 
 class kataConcatenaCondicionesTest extends PHPUnit_Framework_TestCase {
